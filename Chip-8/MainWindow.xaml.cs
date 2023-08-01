@@ -86,8 +86,7 @@ namespace Chip_8
                     lastTime += targetElapsedTime60Hz;
                 }
                 Dispatcher.BeginInvoke(emulator.EmulationCycle);
-                //Dispatcher.Invoke(ScreenRefresh);
-                Thread.Sleep(targetElapsedTime);
+                Thread.Sleep(targetElapsedTime);  
             }
         }
 
